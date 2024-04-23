@@ -3,6 +3,7 @@
 <?php
 $author = getenv('AUTHOR');
 $storage_type = getenv('STORAGE_TYPE');
+$hostname = getenv('HOSTNAME');
 
 echo "<title>Image Library Demo Application by " . $author . "</title>";
 
@@ -54,7 +55,7 @@ img {
 <div id="body-wrapper">
 <?php 
 echo "
-<h1>Image Library with " . $storage_type . " storage backend.</h1>
+<h1>Image Library with " . $storage_type . " storage backend. (Pod: " . $hostname . ")</h1>
 "
 ?>
 <div class="wrapper" id="upload-form">
